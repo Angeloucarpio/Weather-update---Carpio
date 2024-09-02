@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Update - Iligan City</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div id="weather">
+      <h2>Iligan</h2>
+      <img id="weather-icon" src="default.png" alt="Weather Icon" /> 
+      <p><strong>Temperature:</strong> 29.8°C</p>
+      <p><strong>Weather:</strong> Patchy light rain</p>
+      <p><strong>Humidity:</strong> 69%</p>
+    </div>
+  </nav>
+  
+  <div class="header">
+    <ul class="head">Weather</ul>
+  </div>
+
+  <div class="Temperature">
+    <a href="#"><li>Temperature</li></a>
+    <a href="#"><li>Precipitation</li></a>
+    <a href="#"><li>Wind</li></a>
+  </div>
+  
+  <img class="graphic" src="chart.png" alt="Weather Chart" />
+  
+  <div class="time" id="forecast-time">
+    <ul>3:00 PM</ul>
+    <ul>6:00 PM</ul>
+    <ul>9:00 PM</ul>
+    <ul>12:00 AM</ul>
+    <ul>3:00 AM</ul>
+    <ul>6:00 AM</ul>
+    <ul>9:00 AM</ul>
+  </div>
+  
+  <form id="search-form">
+    <input type="text" id="city-input" placeholder="Enter city">
+    <button type="submit">Search</button>
+  </form>
+  
+  <footer>@Copy Right: Angelou Jun O. Carpio</footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
