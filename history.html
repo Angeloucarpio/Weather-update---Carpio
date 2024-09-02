@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Day Forecast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #87CEEB; /* Sky Blue Background */
+        }
+        .logo {
+            height: 150px; /* Increased Logo Height */
+        }
+    </style>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+        <div class="flex justify-between items-center mb-4">
+            <img alt="Weather Channel Logo" class="logo" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-Jfx1CotYSENhBxYgX3OgaukF.png?st=2024-09-02T07%3A03%3A39Z&amp;se=2024-09-02T09%3A03%3A39Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A47%3A30Z&amp;ske=2024-09-02T23%3A47%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Ujp69aVAeHTppcEc5CtM5Q0ztQE8pOccRa2Gi2L/cpU%3D" width="150">
+            <div class="text-right">
+                <div class="text-sm text-gray-600">
+                    NORMAL: 87/68
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center text-2xl font-bold mb-4">
+            7 DAY FORECAST
+        </h1>
+        <div class="grid grid-cols-7 gap-4 text-center">
+            <!-- Example Day -->
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    93
+                </div>
+                <div class="text-lg">
+                    73
+                </div>
+                <div class="text-md">
+                    Wind: 10 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 65%
+                </div>
+                <img alt="Partly cloudy icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-foPFvZgc6KH1dwvAYlRV19yt.png?st=2024-09-02T07%3A03%3A41Z&amp;se=2024-09-02T09%3A03%3A41Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A50%3A20Z&amp;ske=2024-09-02T23%3A50%3A20Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Z1cEpa3anhC83sHbfa%2Bp72nH1Gz2KjmvsfBVxYGFO5A%3D" width="50"/>
+                <div class="font-bold">
+                    WED
+                </div>
+            </div>
+
+            <!-- Repeat the above block for each day, updating temperature, wind, and humidity -->
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    95
+                </div>
+                <div class="text-lg">
+                    75
+                </div>
+                <div class="text-md">
+                    Wind: 8 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 70%
+                </div>
+                <img alt="Sunny icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-XGHmOHMBmSz9ALsfnXij7yYi.png?st=2024-09-02T07%3A03%3A42Z&amp;se=2024-09-02T09%3A03%3A42Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A43%3A12Z&amp;ske=2024-09-02T23%3A43%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BteWHm7pGXzM2Yjm7b%2BPnQJlqUi4wMCz/doiToFkmEc%3D" width="50"/>
+                <div class="font-bold">
+                    THU
+                </div>
+            </div>
+
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    97
+                </div>
+                <div class="text-lg">
+                    75
+                </div>
+                <div class="text-md">
+                    Wind: 12 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 60%
+                </div>
+                <img alt="Sunny icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-XGHmOHMBmSz9ALsfnXij7yYi.png?st=2024-09-02T07%3A03%3A42Z&amp;se=2024-09-02T09%3A03%3A42Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A43%3A12Z&amp;ske=2024-09-02T23%3A43%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BteWHm7pGXzM2Yjm7b%2BPnQJlqUi4wMCz/doiToFkmEc%3D" width="50"/>
+                <div class="font-bold">
+                    FRI
+                </div>
+            </div>
+
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    99
+                </div>
+                <div class="text-lg">
+                    77
+                </div>
+                <div class="text-md">
+                    Wind: 15 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 55%
+                </div>
+                <img alt="Sunny icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-XGHmOHMBmSz9ALsfnXij7yYi.png?st=2024-09-02T07%3A03%3A42Z&amp;se=2024-09-02T09%3A03%3A42Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A43%3A12Z&amp;ske=2024-09-02T23%3A43%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BteWHm7pGXzM2Yjm7b%2BPnQJlqUi4wMCz/doiToFkmEc%3D" width="50"/>
+                <div class="font-bold">
+                    SAT
+                </div>
+            </div>
+
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    95
+                </div>
+                <div class="text-lg">
+                    72
+                </div>
+                <div class="text-md">
+                    Wind: 10 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 65%
+                </div>
+                <img alt="Partly cloudy with rain icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-QDGbOXU9OPzHSSBh6pRLYpB6.png?st=2024-09-02T07%3A03%3A41Z&amp;se=2024-09-02T09%3A03%3A41Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A32%3A02Z&amp;ske=2024-09-02T23%3A32%3A02Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BV7v5FLcnHKajxj6fgPknk78vkqcxND9BuSnf7aHYfw%3D" width="50"/>
+                <div class="font-bold">
+                    SUN
+                </div>
+            </div>
+
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    92
+                </div>
+                <div class="text-lg">
+                    73
+                </div>
+                <div class="text-md">
+                    Wind: 7 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 68%
+                </div>
+                <img alt="Partly cloudy icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-foPFvZgc6KH1dwvAYlRV19yt.png?st=2024-09-02T07%3A03%3A41Z&amp;se=2024-09-02T09%3A03%3A41Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A50%3A20Z&amp;ske=2024-09-02T23%3A50%3A20Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Z1cEpa3anhC83sHbfa%2Bp72nH1Gz2KjmvsfBVxYGFO5A%3D" width="50"/>
+                <div class="font-bold">
+                    MON
+                </div>
+            </div>
+
+            <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-2xl font-bold">
+                    94
+                </div>
+                <div class="text-lg">
+                    74
+                </div>
+                <div class="text-md">
+                    Wind: 9 mph
+                </div>
+                <div class="text-md">
+                    Humidity: 62%
+                </div>
+                <img alt="Sunny icon" class="mx-auto my-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-XGHmOHMBmSz9ALsfnXij7yYi.png?st=2024-09-02T07%3A03%3A42Z&amp;se=2024-09-02T09%3A03%3A42Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-01T23%3A43%3A12Z&amp;ske=2024-09-02T23%3A43%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BteWHm7pGXzM2Yjm7b%2BPnQJlqUi4wMCz/doiToFkmEc%3D" width="50"/>
+                <div class="font-bold">
+                    TUE
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-4">
+            <a class="text-blue-600 mx-2" href="#">
+                <i class="fab fa-facebook"></i>
+                Gelou Carpio
+            </a>
+            <a class="text-blue-600 mx-2" href="#">
+                <i class="fab fa-twitter"></i>
+                @Carpio Gelou.
+            </a>
+        </div>
+        <div class="text-center mt-4">
+            <a class="text-blue-600" href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>
