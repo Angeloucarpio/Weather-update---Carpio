@@ -10,27 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     try {
       const response = await fetch(apiEndpoint); 
-     
       if (!response.ok) throw new Error('Network response was not ok'); 
       const weatherData = await response.json(); 
-      console.log(weatherData)
       const temperatureInCelsius = weatherData.current.temp_c;
       const weatherDescription = weatherData.current.condition.text;
       const humidityLevel = weatherData.current.humidity;
 
-      const conditionToIcon = {
-        'Sunny': 'cloudy.png',  
-        'Clear': 'cloudy.png',
-        'Partly cloudy': 'cloudy.png',
-        'Cloudy': 'cloudy.png',
-        'Overcast': 'cloudy.png',
-        'Rain': 'rain.png',
-        'Showers': 'rain.png',
-        'Thunderstorm': 'rain.png',
-        'Snow': 'snow.png',
-      };
-
-      const iconSrc = conditionToIcon[weatherDescription] || 'default.png';
+      // Use the icon URL provided by the API
+      const iconUrl = `https:${weatherData.current.condition.icon}`;
 
       const localTime = weatherData.location.localtime;
       const date = new Date(localTime);
@@ -41,14 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
       weatherContainer.innerHTML = `
         <h2>${cityName}</h2>
-        <img id="weather-icon" src="${iconSrc}" alt="Weather Icon" />
+        <img id="weather-icon" src="${iconUrl}" alt="Weather Icon" />
         <p><strong>Temperature:</strong> ${temperatureInCelsius}°C</p>
         <p><strong>Weather:</strong> ${weatherDescription}</p>
         <p><strong>Humidity:</strong> ${humidityLevel}%</p>
         <p class="time"><strong>Local Time:</strong> ${localTimeFormatted}</p>
       `;
-
-      weatherIcon.src = iconSrc;
+     
+      weatherIcon.src = iconUrl;
 
     } catch (error) {
       weatherContainer.innerHTML = `<p>Unable to retrieve weather data: ${error.message}</p>`;
